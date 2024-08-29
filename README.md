@@ -5,6 +5,14 @@ python -m venv venv
 pip install django
 django-admin startproject project
 python manage.py startapp contact
+- adicionar no settings.py:
+    Em TEMPLATES:
+        'DIRS': [
+            BASE_DIR / 'base_templates'],
+
+    STATICFILES_DIRS = (
+        BASE_DIR / 'base_static',
+    )
 ```
 
 ## Configurar o git
@@ -17,3 +25,6 @@ git add .
 git commit -m 'Mudei o README.md's
 
 ```
+
+## migrando a base de dados do Django
+
