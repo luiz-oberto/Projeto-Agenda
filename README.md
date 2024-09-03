@@ -23,7 +23,7 @@ git config --global init.defaultBranch main
 # configure o .gitignore
 git add .
 git commit -m 'Mudei o README.md's
-
+git push
 ```
 
 ## migrando a base de dados do Django
