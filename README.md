@@ -27,4 +27,27 @@ git commit -m 'Mudei o README.md's
 ```
 
 ## migrando a base de dados do Django
+```
+python manage.py makemigrations
+python manage.py migrate
+```
 
+## Criando e modificando a senha de um super usuário Django
+```
+python manage.py createsuperuser
+
+-> em caso de esquecer a sua senha: 
+python manage.py changepassword USERNAME
+```
+obs: passwordsgenerator.net -> gerador de senhas fortes
+- Links úteis:
+    - https://docs.djangoproject.com/en/5.1/topics/db/models/
+    - https://docs.djangoproject.com/en/5.1/ref/models/fields/
+
+## aula 453 - django models
+- Nesta aula vamos criar a classe Contact em models.py de contact
+- toda vez que editarmos o nosso model devemos executar os seguintes comando:
+```
+python manage.py makemigrations
+python manage.py migrate
+```
