@@ -20,10 +20,18 @@ python manage.py startapp contact
 git config --global user.name 'Seu Nome'
 git config --global user.email 'Seu email'
 git config --global init.defaultBranch main
-# configure o .gitignore
-git add .
-git commit -m 'Mudei o README.md's
-git push
+### configure o .gitignore
+- git init
+- git add .
+- git commit -m 'Mensagem'
+- git log -> exibe dados sobre os commits
+- git remote add origin URL_DO_GIT
+- git add .
+- git commit -m 'mudei'
+- git push origin main -u
+    -> origin -> nome da origin
+    -> main -> nome da main
+- git push
 ```
 
 ## migrando a base de dados do Django
