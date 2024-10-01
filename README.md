@@ -114,6 +114,7 @@ contacts = Contact.objects.filter(**filters).order('-id')
 ## aula 471 - Filtrando valores com Q e OR para o campo de pesquisa
 
 ~~~python
+# contact_views.py
 from django.db.models import Q
 
 def search(request):
