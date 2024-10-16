@@ -8,14 +8,18 @@
         action=""
         method="POST"
         enctype="multipart/form-data"
-        > <!--enctype é muito importante quando se lida com dados! -->
+        > 
+        <!--enctype é muito importante quando se lida com dados! -->
+        <!-- dentro do form do tipo POST voce coloca um {{crsf_token}} -->
+        {% csrf_token %} 
+        <!-- essa tag serve para garantir que os dados que vão chegar na view são os dados que foram enviados pelo formulário -->
         <div class="form-content">
             <div class="form-group">
             <label for="id_first_name">LABEL</label>
             <input type="text" name="first_name" maxlength="255" id="id_first_name">
             </div>
         </div>
-        
+
         <div class="form-content">
             <div class="form-group">
             <button class="btn" type="submit">Send</button>
