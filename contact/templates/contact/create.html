@@ -5,7 +5,7 @@
         <h2>Contact</h2>
         
         <form 
-        action=""
+        action="{% url 'contact:create' %}"
         method="POST"
         enctype="multipart/form-data"
         > 
@@ -15,8 +15,13 @@
         <!-- essa tag serve para garantir que os dados que vão chegar na view são os dados que foram enviados pelo formulário -->
         <div class="form-content">
             <div class="form-group">
-            <label for="id_first_name">LABEL</label>
-            <input type="text" name="first_name" maxlength="255" id="id_first_name">
+                <label for="id_first_name">first_name</label>
+                <input type="text" name="first_name" maxlength="255" id="id_first_name">
+            </div>
+
+            <div class="form-group">
+                <label for="id_last_name">last_name</label>
+                <input type="text" name="last_name" maxlength="255" id="id_last_name">
             </div>
         </div>
 
