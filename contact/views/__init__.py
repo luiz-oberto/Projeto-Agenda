@@ -3,3 +3,4 @@
 # Toda vez que voce criar alguma coisa, lembre-se de vir aqui e importar corretamente o que voce precisa
 from .contact_forms import *
 from .contact_views import *
+from .user_forms import *
