@@ -142,3 +142,6 @@ GitHub.sublime-settings
 
 # configurações locais
 project/local_settings.py
+
+# arquivo .bat
+abrir_terminais.bat
