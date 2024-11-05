@@ -1,6 +1,6 @@
 # Projeto - Agenda
 ### Uma agenda de contatos feita com Django
-![alt text](image.png)
+![alt text](image-1.png)
 
 
 ## Iniciar o projeto Django
