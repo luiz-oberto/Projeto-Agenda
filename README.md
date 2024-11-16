@@ -3,7 +3,37 @@
 ![alt text](image-1.png)
 
 
-## Iniciar o projeto Django
+## Inicializando o projeto
+- Crie e ative o ambiente virtual na pasta que se localiza o projeto inserindo os seguintes comandos no terminal 
+```
+C:\(caminho da pasta)> python -m venv venv
+C:\(caminho da pasta)> .\venv\Scripts\activate
+```
+
+- em seguida, com o ambiente virtual ativado, instale as bibliotecas necessárias encontradas no arquivo requirements.txt com o comando:
+```
+(venv) C:\(caminho da pasta)> pip install -r requirements.txt
+```
+
+- faça as migrações do banco de dados
+```
+(venv) C:\(caminho da pasta)> python manage.py makemigrations
+(venv) C:\(caminho da pasta)> python manage.py migrate
+```
+
+- Coloque o servidor para funcionar com:
+```
+(venv) C:\(caminho da pasta)> python manage.py runserver
+```
+
+- O banco de dados estará vazio, logo nada será exibido na tela inicial, caso queira preencher com dados de exemplo para ver o funcionamento, execute o código encontrado em *utils* no seu terminal da sequinte maneira:
+```
+(venv) C:\(caminho da pasta)> python utils/create_contacts.py
+```
+Pronto, agora você terá vários contatos sendo exibidos na tela inicial.
+
+
+## configurando o projeto
 ```
 python -m venv venv
 . venv/bin/activate 1
